@@ -1,0 +1,180 @@
+import javax.swing.JOptionPane;
+public class NewJFrame extends javax.swing.JFrame {
+
+    public NewJFrame() {
+        initComponents();
+    }
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jtuser = new javax.swing.JTextField();
+        jpassword = new javax.swing.JPasswordField();
+        bexit = new javax.swing.JButton();
+        bligin = new javax.swing.JButton();
+        jcshow_password = new javax.swing.JCheckBox();
+
+        jRadioButton1.setText("jRadioButton1");
+
+        jTextField1.setText("jTextField1");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(153, 153, 153));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 255));
+        jLabel1.setText("Mental Up");
+        jLabel1.setToolTipText("");
+        jLabel1.setOpaque(true);
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 51, 102));
+        jLabel2.setText("Username");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 51, 102));
+        jLabel3.setText("Password");
+
+        jtuser.setForeground(new java.awt.Color(0, 51, 102));
+
+        bexit.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        bexit.setForeground(new java.awt.Color(0, 51, 102));
+        bexit.setText("Exit");
+        bexit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bexitActionPerformed(evt);
+            }
+        });
+
+        bligin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        bligin.setForeground(new java.awt.Color(0, 51, 102));
+        bligin.setText("Login");
+        bligin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bliginActionPerformed(evt);
+            }
+        });
+
+        jcshow_password.setForeground(new java.awt.Color(0, 51, 102));
+        jcshow_password.setText("Show Password");
+        jcshow_password.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcshow_passwordActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(bexit)
+                        .addGap(128, 128, 128)
+                        .addComponent(bligin))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(54, 54, 54)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jcshow_password)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel2))
+                                .addGap(58, 58, 58)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jtuser)
+                                    .addComponent(jpassword, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE))))))
+                .addContainerGap(112, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(94, 94, 94))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jtuser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(jpassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jcshow_password)
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bexit)
+                    .addComponent(bligin))
+                .addContainerGap(41, Short.MAX_VALUE))
+        );
+
+        pack();
+        setLocationRelativeTo(null);
+    }// </editor-fold>                        
+
+    private void bexitActionPerformed(java.awt.event.ActionEvent evt) {                                      
+       
+        System.exit(0);
+    }                                     
+
+    private void bliginActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        
+        if (jtuser.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Please fill out username");
+        }
+        else if(jpassword.getText().equals("")){
+            JOptionPane.showMessageDialog(null, "Please fill out password");
+        }
+        else if (jtuser.getText().contains("Layla")&&jpassword.getText().contains("1234")){
+            JOptionPane.showMessageDialog(null, "Login successful");
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "wrong username or password"
+            ,"Message",JOptionPane.ERROR_MESSAGE);
+        }
+    }                                      
+
+    private void jcshow_passwordActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        
+        if(jcshow_password.isSelected()){
+            jpassword.setEchoChar((char)0);
+        }
+        else {
+            jpassword.setEchoChar('*');
+        }
+    }                                               
+
+    public static void main(String args[]) {
+        
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new NewJFrame().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton bexit;
+    private javax.swing.JButton bligin;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JCheckBox jcshow_password;
+    private javax.swing.JPasswordField jpassword;
+    private javax.swing.JTextField jtuser;
+    // End of variables declaration                   
+}
